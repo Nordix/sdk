@@ -55,6 +55,8 @@ import (
 	"github.com/networkservicemesh/sdk/pkg/tools/addressof"
 	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
 	"github.com/networkservicemesh/sdk/pkg/tools/token"
+
+	"github.com/networkservicemesh/sdk/pkg/networkservice/common/interpose/interposecandidate"
 )
 
 // Nsmgr - A simple combintation of the Endpoint, registry.NetworkServiceRegistryServer, and registry.NetworkServiceDiscoveryServer interfaces
@@ -81,6 +83,8 @@ func NewServer(ctx context.Context, nsmRegistration *registryapi.NetworkServiceE
 	rv := &nsmgrServer{}
 
 	var urlsRegistryServer, interposeRegistryServer registryapi.NetworkServiceEndpointRegistryServer
+	// storage to save the whole interpose NSE Register to remember the labels
+	var interposeNSEDataRegistryServer registryapi.NetworkServiceEndpointRegistryServer
 
 	nsRegistry := newRemoteNSServer(registryCC)
 	if nsRegistry == nil {
@@ -120,7 +124,8 @@ func NewServer(ctx context.Context, nsmRegistration *registryapi.NetworkServiceE
 			discover.NewServer(nsClient, nseClient),
 			roundrobin.NewServer(),
 			excludedprefixes.NewServer(ctx),
-			recvfd.NewServer(), // Receive any files passed
+			recvfd.NewServer(),                                            // Receive any files passed
+			interposecandidate.NewServer(&interposeNSEDataRegistryServer), // set interpose NSE candidate based on labels
 			interpose.NewServer(&interposeRegistryServer),
 			filtermechanisms.NewServer(&urlsRegistryServer),
 			heal.NewServer(ctx, addressof.NetworkServiceClient(adapters.NewServerToClient(rv))),
@@ -143,6 +148,7 @@ func NewServer(ctx context.Context, nsmRegistration *registryapi.NetworkServiceE
 		registryserialize.NewNetworkServiceEndpointRegistryServer(),
 		expire.NewNetworkServiceEndpointRegistryServer(ctx, time.Minute),
 		registryrecvfd.NewNetworkServiceEndpointRegistryServer(), // Allow to receive a passed files
+		interposeNSEDataRegistryServer,
 		urlsRegistryServer,        // Store endpoints URLs
 		interposeRegistryServer,   // Store cross connect NSEs
 		localBypassRegistryServer, // Perform URL transformations
