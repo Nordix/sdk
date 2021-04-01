@@ -33,6 +33,8 @@ import (
 	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
 	"github.com/networkservicemesh/sdk/pkg/tools/log"
 	"github.com/networkservicemesh/sdk/pkg/tools/stringurl"
+
+	"github.com/networkservicemesh/sdk/pkg/networkservice/common/interpose/interposecandidate"
 )
 
 type interposeServer struct {
@@ -88,24 +90,47 @@ func (l *interposeServer) Request(ctx context.Context, request *networkservice.N
 			return nil, errors.Errorf("connection id should match current path segment id")
 		}
 
-		// Iterate over all cross connect NSEs to check one with passed state.
-		l.interposeNSEs.Range(func(_ string, crossNSEURL *url.URL) bool {
-			crossCTX := clienturlctx.WithClientURL(ctx, crossNSEURL)
+		// If a candidate interpose NSE is found, then do not fall back to picking a random interpose NSE
+		if candidateCrossNSEName, ok := interposecandidate.Candidate(ctx); ok {
+			var candidateCrossNSEURL *url.URL
+			if candidateCrossNSEURL, ok = l.interposeNSEs.Load(candidateCrossNSEName); ok {
+				logger.Infof("interposeServer: Request: candidateCrossNSEName=%v, candidateCrossNSEURL=%v", candidateCrossNSEName, candidateCrossNSEURL)
 
-			// Store client connection and selected cross connection URL.
-			l.activeConnection.Store(activeConnID, connectionInfo{
-				clientConnID:    activeConnID,
-				endpointURL:     clientURL,
-				interposeNSEURL: crossNSEURL,
-			})
-			result, err = next.Server(crossCTX).Request(crossCTX, request)
-			if err != nil {
-				logger.Errorf("failed to request cross NSE %v err: %v", crossNSEURL, err)
-				return true
+				crossCTX := clienturlctx.WithClientURL(ctx, candidateCrossNSEURL)
+				// Store client connection and selected cross connection URL.
+				connInfo, _ = l.activeConnection.LoadOrStore(activeConnID, connectionInfo{
+					clientConnID:    activeConnID,
+					endpointURL:     clientURL,
+					interposeNSEURL: candidateCrossNSEURL,
+				})
+				result, err = next.Server(crossCTX).Request(crossCTX, request)
+				if err != nil {
+					log.FromContext(ctx).Errorf("failed to request candidate cross NSE %v err: %v", candidateCrossNSEURL, err)
+				}
+			} else {
+				log.FromContext(ctx).Errorf("failed to lookup candidate cross NSE %v", candidateCrossNSEURL)
 			}
-			// If all is ok, stop iterating.
-			return false
-		})
+		} else {
+			// Iterate over all cross connect NSEs to check one with passed state.
+			l.interposeNSEs.Range(func(theKey string, crossNSEURL *url.URL) bool {
+				logger.Infof("interposeServer: Request: theKey=%v, crossNSEURL=%v", theKey, crossNSEURL)
+				crossCTX := clienturlctx.WithClientURL(ctx, crossNSEURL)
+
+				// Store client connection and selected cross connection URL.
+				l.activeConnection.Store(activeConnID, connectionInfo{
+					clientConnID:    activeConnID,
+					endpointURL:     clientURL,
+					interposeNSEURL: crossNSEURL,
+				})
+				result, err = next.Server(crossCTX).Request(crossCTX, request)
+				if err != nil {
+					log.FromContext(ctx).Errorf("failed to request cross NSE %v err: %v", crossNSEURL, err)
+					return true
+				}
+				// If all is ok, stop iterating.
+				return false
+			})
+		}
 		if result != nil {
 			return result, nil
 		}
