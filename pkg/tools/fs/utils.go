@@ -40,7 +40,6 @@ func WatchFile(ctx context.Context, filePath string) <-chan []byte {
 
 	if err != nil {
 		logger.Errorf("can not create node poller: %v", err.Error())
-		_ = watcher.Close()
 		close(result)
 		return result
 	}
