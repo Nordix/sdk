@@ -194,8 +194,8 @@ func NewServer(ctx context.Context, tokenGenerator token.GeneratorFunc, options 
 			discover.NewServer(nsClient, nseClient),
 			roundrobin.NewServer(),
 			excludedprefixes.NewServer(ctx),
-			recvfd.NewServer(),                                            // Receive any files passed
-			interposecandidate.NewServer(&interposeNSEDataRegistryServer), // set interpose NSE candidate based on labels
+			recvfd.NewServer(), // Receive any files passed
+			interposecandidate.NewServer(&interposeNSEDataRegistryServer, nseClient), // set interpose NSE candidate based on labels
 			interpose.NewServer(&interposeRegistryServer),
 			filtermechanisms.NewServer(&urlsRegistryServer),
 			heal.NewServer(ctx, addressof.NetworkServiceClient(adapters.NewServerToClient(rv))),

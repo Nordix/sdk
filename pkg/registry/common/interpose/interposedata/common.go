@@ -43,10 +43,10 @@ func (m *Map) Delete(key string) {
 
 // Range calls f sequentially for each key and value present in the map.
 // If f returns false, range stops the iteration.
-func (m *Map) Range(f func(key string, value *registry.NetworkServiceEndpoint) bool) {
+func (m *Map) Range(f func(key string, value *registry.NetworkServiceEndpoint, i ...interface{}) bool, args ...interface{}) {
 	m.Lock()
 	for k, v := range m.internal {
-		if r := f(k, v); !r {
+		if r := f(k, v, args...); !r {
 			break
 		}
 	}
