@@ -1,4 +1,4 @@
-module github.com/networkservicemesh/sdk
+module github.com/nordix/nsm-sdk
 
 go 1.18
 
