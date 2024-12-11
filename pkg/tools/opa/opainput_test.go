@@ -25,9 +25,9 @@ import (
 
 	"google.golang.org/grpc/peer"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/opa"
+	"github.com/Nordix/nsm-sdk/pkg/tools/opa"
 
 	"github.com/stretchr/testify/assert"
 

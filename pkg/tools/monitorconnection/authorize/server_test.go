@@ -34,10 +34,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spiffe/go-spiffe/v2/spiffeid"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/monitorconnection/authorize"
-	"github.com/networkservicemesh/sdk/pkg/tools/opa"
+	"github.com/Nordix/nsm-sdk/pkg/tools/monitorconnection/authorize"
+	"github.com/Nordix/nsm-sdk/pkg/tools/opa"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
 	"github.com/stretchr/testify/require"
 )

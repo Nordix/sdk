@@ -29,16 +29,16 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/begin"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/null"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/refresh"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
-	"github.com/networkservicemesh/sdk/pkg/registry/utils/checks/checknse"
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
-	"github.com/networkservicemesh/sdk/pkg/tools/clockmock"
-	"github.com/networkservicemesh/sdk/pkg/tools/interdomain"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/begin"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/refresh"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/utils/checks/checknse"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clockmock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/interdomain"
 )
 
 const (

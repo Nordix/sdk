@@ -21,15 +21,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/memory"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/swapip"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/adapters"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/registry/utils/checks/checknse"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/memory"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/swapip"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/adapters"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/registry/utils/checks/checknse"
 )
 
 func TestSwapIPNSERegistryServer_Register(t *testing.T) {

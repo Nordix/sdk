@@ -28,7 +28,7 @@ import (
 	"github.com/pkg/errors"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 )
 
 // MatchEndpoint filters input nses by network service configuration.

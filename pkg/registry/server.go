@@ -20,10 +20,10 @@
 package registry
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
 )
 
 // Registry - aggregates the APIs:

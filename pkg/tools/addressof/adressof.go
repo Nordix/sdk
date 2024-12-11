@@ -29,8 +29,8 @@
 package addressof
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 )
 
 // NetworkServiceClient - convenience function to help in converting things from networkservice.NetworkServiceClient to *networkservice.NetworkServiceClient

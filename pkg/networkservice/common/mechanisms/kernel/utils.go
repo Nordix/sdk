@@ -21,7 +21,7 @@ package kernel
 import (
 	"net/url"
 
-	kernelmech "github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
+	kernelmech "github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
 )
 
 var netNSURL = (&url.URL{Scheme: "file", Path: "/proc/thread-self/ns/net"}).String()

@@ -27,12 +27,12 @@ import (
 
 	stand "github.com/nats-io/nats-streaming-server/server"
 	"github.com/nats-io/stan.go"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/journal"
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
-	"github.com/networkservicemesh/sdk/pkg/tools/clockmock"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/journal"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clockmock"
 )
 
 func TestConnect(t *testing.T) {

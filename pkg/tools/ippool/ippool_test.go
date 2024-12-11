@@ -28,9 +28,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/prefixpool"
+	"github.com/Nordix/nsm-sdk/pkg/tools/prefixpool"
 )
 
 func TestIPPoolTool_Add(t *testing.T) {

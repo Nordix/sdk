@@ -20,12 +20,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkerror"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkopts"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkerror"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkopts"
 )
 
 // ClientSuite - test suite to check that a NetworkServiceClient implementing a Mechanism meets basic contracts

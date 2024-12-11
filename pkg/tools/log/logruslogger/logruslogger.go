@@ -32,8 +32,8 @@ import (
 	"go.uber.org/atomic"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/log/spanlogger"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log/spanlogger"
 )
 
 type logrusLogger struct {

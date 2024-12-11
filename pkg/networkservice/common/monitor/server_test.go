@@ -28,23 +28,23 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/cls"
-	kernelmech "github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/cls"
+	kernelmech "github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/clientconn"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/monitor"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkcontext"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/clientconn"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/monitor"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkcontext"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/adapters"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/adapters"
 )
 
 func TestMonitorServer(t *testing.T) {

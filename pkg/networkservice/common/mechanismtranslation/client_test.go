@@ -28,19 +28,19 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/cls"
-	kernelmech "github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/vfio"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/cls"
+	kernelmech "github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/vfio"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms/kernel"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanismtranslation"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/null"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/adapters"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkrequest"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms/kernel"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanismtranslation"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/adapters"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkrequest"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
 )
 
 const (

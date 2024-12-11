@@ -21,12 +21,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 type retryClient struct {

@@ -28,17 +28,17 @@ import (
 
 	"github.com/edwarnicke/genericsync"
 	"github.com/miekg/dns"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/dnsconfigs"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/fanout"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/memory"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/noloop"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/searches"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/dnsconfigs"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/fanout"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/memory"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/noloop"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/searches"
 )
 
 func requireIPv4Lookup(ctx context.Context, t *testing.T, r *net.Resolver, host, expected string) {

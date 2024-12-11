@@ -29,15 +29,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/nsmgr"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/nsmgrproxy"
-	"github.com/networkservicemesh/sdk/pkg/registry"
-	"github.com/networkservicemesh/sdk/pkg/registry/chains/memory"
-	"github.com/networkservicemesh/sdk/pkg/registry/chains/proxydns"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/dnsresolve"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/nsmgr"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/nsmgrproxy"
+	"github.com/Nordix/nsm-sdk/pkg/registry"
+	"github.com/Nordix/nsm-sdk/pkg/registry/chains/memory"
+	"github.com/Nordix/nsm-sdk/pkg/registry/chains/proxydns"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/dnsresolve"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 // Builder implements builder pattern for building NSM Domain

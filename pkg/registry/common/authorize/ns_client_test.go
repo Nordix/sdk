@@ -20,13 +20,13 @@ import (
 	"context"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/authorize"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/grpcmetadata"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/registry/utils/count"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/authorize"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/grpcmetadata"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/registry/utils/count"
 
 	"go.uber.org/goleak"
 )

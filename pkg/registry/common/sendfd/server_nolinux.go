@@ -20,9 +20,9 @@
 package sendfd
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/null"
 )
 
 // NewNetworkServiceEndpointRegistryServer - returns a new null server that does nothing but call next.NetworkServiceEndpointRegistryServer(ctx).

@@ -25,13 +25,13 @@ import (
 	"go.uber.org/atomic"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/onidle"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/inject/injecterror"
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
-	"github.com/networkservicemesh/sdk/pkg/tools/clockmock"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/onidle"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/inject/injecterror"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clockmock"
 )
 
 const (

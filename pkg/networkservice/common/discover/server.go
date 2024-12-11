@@ -25,14 +25,14 @@ import (
 	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/matchutils"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/matchutils"
 )
 
 type discoverCandidatesServer struct {

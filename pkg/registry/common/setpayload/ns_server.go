@@ -20,10 +20,10 @@ import (
 	"context"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/payload"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/payload"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
 )
 
 type setPayloadNSServer struct {

@@ -22,11 +22,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/clusterinfo"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/clusterinfo"
 )
 
 func TestReadClusterName(t *testing.T) {

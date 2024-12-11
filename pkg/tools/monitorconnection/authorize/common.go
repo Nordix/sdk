@@ -21,7 +21,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 // Policy represents authorization policy for monitor connection.

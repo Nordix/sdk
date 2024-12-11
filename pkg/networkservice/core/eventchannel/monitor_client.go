@@ -26,7 +26,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"google.golang.org/grpc"
 
 	"github.com/edwarnicke/serialize"

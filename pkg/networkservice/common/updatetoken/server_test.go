@@ -24,20 +24,20 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/adapters"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/adapters"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/updatepath"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/updatetoken"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/updatepath"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/updatetoken"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
 
 	"github.com/golang/protobuf/ptypes/timestamp"
 	"go.uber.org/goleak"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -21,7 +21,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 const (

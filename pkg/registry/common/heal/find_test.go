@@ -24,11 +24,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/nsmgr"
-	registryclient "github.com/networkservicemesh/sdk/pkg/registry/chains/client"
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/nsmgr"
+	registryclient "github.com/Nordix/nsm-sdk/pkg/registry/chains/client"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 )
 
 func TestHealClient_FindTest(t *testing.T) {

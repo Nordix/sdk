@@ -22,7 +22,7 @@ import (
 	"github.com/golang/protobuf/ptypes/empty"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 )
 
 // tailClient is a simple implementation of networkservice.NetworkServiceClient that is called at the end of a chain

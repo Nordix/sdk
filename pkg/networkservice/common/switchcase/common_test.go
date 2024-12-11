@@ -22,9 +22,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/switchcase"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/switchcase"
 )
 
 type sample struct {

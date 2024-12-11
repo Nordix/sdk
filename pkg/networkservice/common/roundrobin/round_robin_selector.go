@@ -21,7 +21,7 @@ package roundrobin
 import (
 	"sync"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 )
 
 type roundRobinSelector struct {

@@ -20,9 +20,9 @@ package streamcontext
 import (
 	"context"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/extend"
+	"github.com/Nordix/nsm-sdk/pkg/tools/extend"
 )
 
 type networkServiceEndpointRegistryFindClient struct {

@@ -24,9 +24,9 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/clienturl"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/clienturl"
 )
 
 // Option is an option pattern for NewNetworkServiceRegistryClient, NewNetworkServiceEndpointRegistryClient

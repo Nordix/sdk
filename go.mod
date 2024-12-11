@@ -1,8 +1,9 @@
-module github.com/networkservicemesh/sdk
+module github.com/Nordix/nsm-sdk
 
 go 1.23
 
 require (
+	github.com/Nordix/nsm-api v1.14.2-rc.1.0.20241211160105-fd31d45006cf
 	github.com/RoaringBitmap/roaring v0.9.4
 	github.com/antonfisher/nested-logrus-formatter v1.3.1
 	github.com/benbjohnson/clock v1.3.0
@@ -13,14 +14,13 @@ require (
 	github.com/fsnotify/fsnotify v1.5.4
 	github.com/ghodss/yaml v1.0.0
 	github.com/golang-jwt/jwt/v4 v4.5.1
-	github.com/golang/protobuf v1.5.3
+	github.com/golang/protobuf v1.5.4
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.3.1
 	github.com/miekg/dns v1.1.50
 	github.com/nats-io/nats-streaming-server v0.24.6
 	github.com/nats-io/stan.go v0.10.3
-        github.com/Nordix/nsm-api v1.14.2-rc.1.0.20241209080353-bbb4cd5f8f0
-        github.com/open-policy-agent/opa v0.44.0
+	github.com/open-policy-agent/opa v0.44.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.17.0
 	github.com/r3labs/diff v1.1.0

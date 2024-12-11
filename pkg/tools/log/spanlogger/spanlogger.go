@@ -25,8 +25,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/opentelemetry"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/opentelemetry"
 )
 
 // spanlogger - provides a way to log via opentelemetry spans

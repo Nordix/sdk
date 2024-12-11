@@ -26,7 +26,7 @@ import (
 	"github.com/miekg/dns"
 	"github.com/r3labs/diff"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 func logRequest(ctx context.Context, message *dns.Msg, prefixes ...string) {

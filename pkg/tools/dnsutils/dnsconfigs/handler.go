@@ -24,13 +24,13 @@ import (
 	"github.com/edwarnicke/genericsync"
 	"github.com/miekg/dns"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/searches"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/searches"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 type dnsConfigsHandler struct {

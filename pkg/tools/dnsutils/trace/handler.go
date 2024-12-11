@@ -22,9 +22,9 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/typeutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/typeutils"
 )
 
 type beginTraceHandler struct {

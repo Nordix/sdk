@@ -22,11 +22,11 @@ import (
 	"context"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
 )
 
 type setregtimeNSEServer struct {

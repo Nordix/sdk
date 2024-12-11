@@ -24,16 +24,16 @@ import (
 	"time"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/clientconn"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/postpone"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/clientconn"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/postpone"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 type dialNSClient struct {

@@ -28,10 +28,10 @@ import (
 	"github.com/google/uuid"
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/matchutils"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/matchutils"
 )
 
 type memoryNSServer struct {

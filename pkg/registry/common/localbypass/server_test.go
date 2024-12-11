@@ -26,13 +26,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/localbypass"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/memory"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/adapters"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/localbypass"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/memory"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/adapters"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
 )
 
 const (

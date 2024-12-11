@@ -21,13 +21,13 @@ import (
 	"context"
 	"sync"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/log/spanlogger"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log/spanlogger"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/log/logruslogger"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log/logruslogger"
 )
 
 type contextKeyType string

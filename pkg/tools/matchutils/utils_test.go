@@ -21,12 +21,12 @@ package matchutils_test
 import (
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice/payload"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/payload"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/matchutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/matchutils"
 )
 
 func TestNSMatch(t *testing.T) {

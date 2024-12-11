@@ -20,14 +20,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/begin"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/begin"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
 )
 
 func TestReRequestClient(t *testing.T) {

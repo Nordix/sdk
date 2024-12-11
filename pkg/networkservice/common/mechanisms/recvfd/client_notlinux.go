@@ -20,9 +20,9 @@
 package recvfd
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/null"
 )
 
 // NewClient - returns client chain element to recv FDs over the connection (if possible) for any Mechanism.Parameters[common.InodeURL]

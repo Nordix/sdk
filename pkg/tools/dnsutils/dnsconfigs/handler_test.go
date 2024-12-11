@@ -22,14 +22,14 @@ import (
 
 	"github.com/edwarnicke/genericsync"
 	"github.com/miekg/dns"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/require"
 	"golang.org/x/net/context"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/dnsconfigs"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/searches"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/dnsconfigs"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/searches"
 )
 
 type responseWriter struct {

@@ -21,12 +21,12 @@ import (
 
 	"github.com/edwarnicke/serialize"
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/monitor"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/monitor"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 const (

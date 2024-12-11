@@ -24,15 +24,15 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/interdomain"
+	"github.com/Nordix/nsm-sdk/pkg/tools/interdomain"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/streamcontext"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/streamcontext"
 )
 
 type dnsNSResolveServer struct {

@@ -25,11 +25,11 @@ import (
 	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	kernelmech "github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	kernelmech "github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/nanoid"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/nanoid"
 )
 
 type kernelMechanismServer struct {

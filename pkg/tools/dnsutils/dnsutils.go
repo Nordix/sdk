@@ -23,9 +23,9 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 // ListenAndServe starts dns server with specific handler. Listens both udp/tcp networks.

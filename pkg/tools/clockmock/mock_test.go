@@ -27,7 +27,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clockmock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clockmock"
 )
 
 const (

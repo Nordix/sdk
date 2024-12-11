@@ -22,20 +22,20 @@ import (
 
 	"google.golang.org/grpc"
 
-	registryapi "github.com/networkservicemesh/api/pkg/api/registry"
+	registryapi "github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry"
-	registryauthorize "github.com/networkservicemesh/sdk/pkg/registry/common/authorize"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/begin"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/clientconn"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/connect"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/dial"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/dnsresolve"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/grpcmetadata"
+	"github.com/Nordix/nsm-sdk/pkg/registry"
+	registryauthorize "github.com/Nordix/nsm-sdk/pkg/registry/common/authorize"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/begin"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/clientconn"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/connect"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/dial"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/dnsresolve"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/grpcmetadata"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/updatepath"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/updatepath"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 type serverOptions struct {

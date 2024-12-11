@@ -30,19 +30,19 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/memif"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/memif"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/endpoint"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/begin"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/monitor"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/updatepath"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/endpoint"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/begin"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/monitor"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/updatepath"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
 )
 
 func startEndpoint(ctx context.Context, t *testing.T, e endpoint.Endpoint) *grpc.ClientConn {

@@ -29,11 +29,11 @@ import (
 
 	"github.com/golang/protobuf/ptypes/empty"
 	stan "github.com/nats-io/stan.go"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
 )
 
 // ActionRequest indicates that the event seen is a connection request.

@@ -29,12 +29,12 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/authorize"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/count"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/authorize"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/count"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
 )
 
 func TestAuthClient(t *testing.T) {

@@ -16,7 +16,7 @@
 
 package begin
 
-import "github.com/networkservicemesh/api/pkg/api/registry"
+import "github.com/Nordix/nsm-api/pkg/api/registry"
 
 func mergeNSE(left, right *registry.NetworkServiceEndpoint) *registry.NetworkServiceEndpoint {
 	if left == nil || right == nil {

@@ -27,16 +27,16 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/client"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/monitor"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/upstreamrefresh"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/count"
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/client"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/monitor"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/upstreamrefresh"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/count"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 )
 
 func Test_UpstreamRefreshClient(t *testing.T) {

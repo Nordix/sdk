@@ -21,14 +21,14 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/goleak"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/begin"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/begin"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
 )
 
 func TestCloseServer(t *testing.T) {

@@ -21,16 +21,16 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/cls"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/memif"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/srv6"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/vxlan"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/cls"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/memif"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/srv6"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/vxlan"
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/filtermechanisms"
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/filtermechanisms"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
 )
 
 func TestFilterMechanismsClient_Request(t *testing.T) {

@@ -25,12 +25,12 @@ import (
 	"testing"
 
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/peer"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/opa"
+	"github.com/Nordix/nsm-sdk/pkg/tools/opa"
 )
 
 func Test_CurrentTokenShouldBeSigned_Server(t *testing.T) {

@@ -27,24 +27,24 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkcontext"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkcontext"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/adapters"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/adapters"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/cls"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/memif"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/srv6"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/vxlan"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/cls"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/memif"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/srv6"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/vxlan"
 	"github.com/stretchr/testify/assert"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/null"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/inject/injecterror"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/inject/injecterror"
 )
 
 func client() networkservice.NetworkServiceClient {

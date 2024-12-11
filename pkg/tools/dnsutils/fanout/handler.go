@@ -26,10 +26,10 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 type fanoutHandler struct {

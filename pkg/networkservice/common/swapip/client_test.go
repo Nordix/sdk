@@ -23,16 +23,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/common"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/common"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/swapip"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkrequest"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkresponse"
-	"github.com/networkservicemesh/sdk/pkg/tools/fs"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/swapip"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkrequest"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkresponse"
+	"github.com/Nordix/nsm-sdk/pkg/tools/fs"
 )
 
 // nolint:goconst

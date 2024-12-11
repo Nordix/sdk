@@ -24,12 +24,12 @@ import (
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	kernelmech "github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	kernelmech "github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms/kernel"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms/kernel"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/nanoid"
+	"github.com/Nordix/nsm-sdk/pkg/tools/nanoid"
 )
 
 func TestKernelMechanismServer_ShouldSetInterfaceName(t *testing.T) {

@@ -29,9 +29,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	registryapi "github.com/networkservicemesh/api/pkg/api/registry"
+	registryapi "github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 const (

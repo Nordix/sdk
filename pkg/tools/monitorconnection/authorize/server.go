@@ -19,11 +19,11 @@ package authorize
 
 import (
 	"github.com/edwarnicke/genericsync"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/spiffe/go-spiffe/v2/spiffeid"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/monitorconnection/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/spire"
+	"github.com/Nordix/nsm-sdk/pkg/tools/monitorconnection/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/spire"
 )
 
 type authorizeMonitorConnectionsServer struct {

@@ -23,10 +23,10 @@ import (
 
 	"github.com/edwarnicke/genericsync"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/interdomain"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/interdomain"
 )
 
 // Option configures vl3DNSServer

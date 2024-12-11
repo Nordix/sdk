@@ -22,14 +22,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/null"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkerror"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/inject/injecterror"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkerror"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/inject/injecterror"
 )
 
 func TestCheckErrorClient_Nil(t *testing.T) {

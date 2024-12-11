@@ -18,7 +18,7 @@
 
 package endpoint
 
-import "github.com/networkservicemesh/api/pkg/api/networkservice"
+import "github.com/Nordix/nsm-api/pkg/api/networkservice"
 
 // Combine returns a new combined endpoint:
 // * networkservice.NetworkServiceServer created by combineFun(eps)

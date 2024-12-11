@@ -20,11 +20,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/eventchannel"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/eventchannel"
 )
 
 func TestMonitorConnection_MonitorConnectionsServer_Send(t *testing.T) {

@@ -23,11 +23,11 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/trace/traceconcise"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/trace/traceverbose"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/trace/traceconcise"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/trace/traceverbose"
 )
 
 type traceNetworkServiceRegistryClient struct {

@@ -23,10 +23,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/opa"
+	"github.com/Nordix/nsm-sdk/pkg/tools/opa"
 )
 
 func TestWithAllTokensValidPolicy(t *testing.T) {

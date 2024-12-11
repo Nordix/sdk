@@ -29,8 +29,8 @@ import (
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/peer"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/grpcmetadata"
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/grpcmetadata"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 func updatePath(path *grpcmetadata.Path, peerTok, tok string) (*grpcmetadata.Path, uint32, error) {

@@ -29,7 +29,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"

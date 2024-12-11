@@ -21,12 +21,12 @@ import (
 
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/peer"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 func updateToken(ctx context.Context, conn *networkservice.Connection, tokenGenerator token.GeneratorFunc) error {

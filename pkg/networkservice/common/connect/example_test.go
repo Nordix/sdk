@@ -19,13 +19,13 @@ package connect_test
 import (
 	"context"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/client"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/endpoint"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/connect"
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/client"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/endpoint"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/connect"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 // ExampleForwarder - example of how to use the connect chain element in a forwarder

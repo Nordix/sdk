@@ -21,7 +21,7 @@ package next
 import (
 	"context"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 )
 
 type contextKeyType string

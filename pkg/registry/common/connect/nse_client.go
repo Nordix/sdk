@@ -20,11 +20,11 @@ import (
 	"context"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/clientconn"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/clientconn"
 )
 
 const errNoCCProvidedMsg = "no grpc.ClientConnInterface provided"

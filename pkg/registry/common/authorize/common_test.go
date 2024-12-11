@@ -24,8 +24,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/grpcmetadata"
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/grpcmetadata"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 const (

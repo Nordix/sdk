@@ -23,7 +23,7 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 // SetupLevelChangeOnSignal sets the loglevel to the one specified in the map when a signal assotiated to it arrives

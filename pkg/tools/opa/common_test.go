@@ -29,10 +29,10 @@ import (
 	"time"
 
 	"github.com/golang-jwt/jwt/v4"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"google.golang.org/grpc/credentials"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 const (

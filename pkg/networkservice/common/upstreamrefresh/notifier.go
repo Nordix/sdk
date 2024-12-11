@@ -21,7 +21,7 @@ import (
 
 	"github.com/edwarnicke/serialize"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 // notifier - notifies all subscribers of an event

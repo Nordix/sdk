@@ -24,9 +24,9 @@ import (
 	"time"
 
 	"github.com/edwarnicke/genericsync"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clock"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clock"
 )
 
 type cache struct {

@@ -25,10 +25,10 @@ import (
 	"github.com/golang/protobuf/ptypes/empty"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/trace/traceconcise"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/trace/traceverbose"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/trace/traceconcise"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/trace/traceverbose"
 )
 
 type traceClient struct {

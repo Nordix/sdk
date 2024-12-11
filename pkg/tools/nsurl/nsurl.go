@@ -32,9 +32,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/cls"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/common"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/cls"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/common"
 )
 
 // NSURL - wrapper around *url.URL to allow easy extraction of NSM related information

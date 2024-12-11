@@ -24,18 +24,18 @@ import (
 	"context"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/memory"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/null"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/streamchannel"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/trace/testutil"
-	"github.com/networkservicemesh/sdk/pkg/registry/utils/inject/injecterror"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/memory"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/streamchannel"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/trace/testutil"
+	"github.com/Nordix/nsm-sdk/pkg/registry/utils/inject/injecterror"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 
 	"github.com/stretchr/testify/require"
 )

@@ -28,19 +28,19 @@ import (
 
 	"github.com/edwarnicke/genericsync"
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils"
-	dnschain "github.com/networkservicemesh/sdk/pkg/tools/dnsutils/chain"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/dnsconfigs"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/fanout"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/memory"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/noloop"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/norecursion"
-	"github.com/networkservicemesh/sdk/pkg/tools/ippool"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils"
+	dnschain "github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/chain"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/dnsconfigs"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/fanout"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/memory"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/noloop"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/norecursion"
+	"github.com/Nordix/nsm-sdk/pkg/tools/ippool"
 )
 
 type vl3DNSServer struct {

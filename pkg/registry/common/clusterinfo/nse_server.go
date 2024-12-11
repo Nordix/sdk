@@ -22,10 +22,10 @@ import (
 	"os"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"gopkg.in/yaml.v2"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
 )
 
 type clusterinfoNSEServer struct {

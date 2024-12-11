@@ -22,9 +22,9 @@ import (
 
 	"github.com/miekg/dns"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/log/logruslogger"
-	"github.com/networkservicemesh/sdk/pkg/tools/log/spanlogger"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log/logruslogger"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log/spanlogger"
 )
 
 type contextKeyType string

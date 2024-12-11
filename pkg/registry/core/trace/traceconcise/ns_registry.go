@@ -27,10 +27,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/streamcontext"
-	"github.com/networkservicemesh/sdk/pkg/tools/typeutils"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/streamcontext"
+	"github.com/Nordix/nsm-sdk/pkg/tools/typeutils"
 )
 
 type conciseNetworkServiceRegistryClient struct {

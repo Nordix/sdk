@@ -22,7 +22,7 @@ import (
 	"github.com/edwarnicke/genericsync"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
 )
 
 type mapKey struct{}

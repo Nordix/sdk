@@ -21,7 +21,7 @@ import (
 
 	"github.com/golang/protobuf/ptypes/empty"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 )
 
 // tailServer is a simple implementation of networkservice.NetworkServiceServer that is called at the end of a chain

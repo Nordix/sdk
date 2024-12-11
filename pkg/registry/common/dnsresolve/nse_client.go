@@ -20,15 +20,15 @@ import (
 	"context"
 	"net"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
 	"github.com/golang/protobuf/ptypes/empty"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
-	"github.com/networkservicemesh/sdk/pkg/tools/interdomain"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/interdomain"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
 )
 
 type dnsNSEResolveClient struct {

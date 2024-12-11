@@ -26,15 +26,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	nsclient "github.com/networkservicemesh/sdk/pkg/networkservice/chains/client"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/nsmgr"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/heal"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/count"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/inject/injecterror"
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	nsclient "github.com/Nordix/nsm-sdk/pkg/networkservice/chains/client"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/nsmgr"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/heal"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/count"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/inject/injecterror"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 )
 
 func Test_DiscoverForwarder_CloseAfterError(t *testing.T) {

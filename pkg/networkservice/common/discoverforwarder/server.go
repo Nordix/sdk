@@ -24,14 +24,14 @@ import (
 	"net/url"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/clienturlctx"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
-	"github.com/networkservicemesh/sdk/pkg/tools/matchutils"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/clienturlctx"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/matchutils"
 )
 
 type discoverForwarderServer struct {
@@ -115,7 +115,7 @@ func (d *discoverForwarderServer) Request(ctx context.Context, request *networks
 	var candidatesErr = errors.New("all forwarders have failed")
 
 	// TODO: Should we consider about load balancing?
-	// https://github.com/networkservicemesh/sdk/issues/790
+	// https://github.com/Nordix/nsm-sdk/issues/790
 	for i, candidate := range nses {
 		u, err := url.Parse(candidate.Url)
 		if err != nil {

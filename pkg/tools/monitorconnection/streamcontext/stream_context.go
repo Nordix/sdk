@@ -20,9 +20,9 @@ package streamcontext
 import (
 	"context"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/extend"
+	"github.com/Nordix/nsm-sdk/pkg/tools/extend"
 )
 
 type monitorConnectionMonitorConnectionsServer struct {

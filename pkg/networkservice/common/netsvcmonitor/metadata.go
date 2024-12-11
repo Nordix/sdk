@@ -19,7 +19,7 @@ package netsvcmonitor
 import (
 	"context"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
 )
 
 type cancelFunctionKey struct{}

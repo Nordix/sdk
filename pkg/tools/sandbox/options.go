@@ -17,7 +17,7 @@
 package sandbox
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 )
 
 type forwarderOptions struct {

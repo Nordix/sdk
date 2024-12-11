@@ -17,7 +17,7 @@
 package begin
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"google.golang.org/protobuf/proto"
 )
 

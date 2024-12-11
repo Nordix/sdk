@@ -18,11 +18,11 @@
 package passthrough
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/passthrough/replacelabels"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/passthrough/replacensename"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/passthrough/replacelabels"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/passthrough/replacensename"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
 )
 
 // NewClient returns a combination for passthrough cases

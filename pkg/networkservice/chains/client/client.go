@@ -21,19 +21,19 @@ import (
 	"context"
 
 	"github.com/google/uuid"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/begin"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/clientconn"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/clienturl"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/connect"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/dial"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/null"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/refresh"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/trimpath"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/updatepath"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/begin"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/clientconn"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/clienturl"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/connect"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/dial"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/refresh"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/trimpath"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/updatepath"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
 )
 
 // NewClient - returns case NSM client.

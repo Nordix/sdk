@@ -26,9 +26,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/net/context"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/cache"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/memory"
-	"github.com/networkservicemesh/sdk/pkg/tools/dnsutils/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/cache"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/memory"
+	"github.com/Nordix/nsm-sdk/pkg/tools/dnsutils/next"
 )
 
 type ResponseWriter struct {

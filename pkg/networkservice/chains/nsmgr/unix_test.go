@@ -29,16 +29,16 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/client"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/nsmgr"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms/kernel"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms/recvfd"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanisms/sendfd"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/count"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/inject/injecterror"
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/client"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/nsmgr"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms/kernel"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms/recvfd"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanisms/sendfd"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/count"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/inject/injecterror"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 )
 
 func Test_Local_NoURLUsecase(t *testing.T) {

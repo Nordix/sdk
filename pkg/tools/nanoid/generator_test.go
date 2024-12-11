@@ -22,7 +22,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/nanoid"
+	"github.com/Nordix/nsm-sdk/pkg/tools/nanoid"
 )
 
 const (

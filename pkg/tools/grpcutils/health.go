@@ -17,7 +17,7 @@
 package grpcutils
 
 import (
-	"github.com/networkservicemesh/api/pkg/api"
+	"github.com/Nordix/nsm-api/pkg/api"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/health"
 	"google.golang.org/grpc/health/grpc_health_v1"

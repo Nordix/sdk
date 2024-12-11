@@ -21,12 +21,12 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/trace/traceconcise"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/trace/traceverbose"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/trace/traceconcise"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/trace/traceverbose"
 
 	"github.com/golang/protobuf/ptypes/empty"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 )
 
 type traceServer struct {

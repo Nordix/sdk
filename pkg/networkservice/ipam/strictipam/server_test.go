@@ -21,14 +21,14 @@ import (
 	"net"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/next"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/ipam/point2pointipam"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/ipam/strictipam"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/checks/checkrequest"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/ipam/point2pointipam"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/ipam/strictipam"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/checks/checkrequest"
 )
 
 func newRequest(connID string) *networkservice.NetworkServiceRequest {

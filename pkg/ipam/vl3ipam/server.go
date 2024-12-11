@@ -23,11 +23,11 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/networkservicemesh/api/pkg/api/ipam"
+	"github.com/Nordix/nsm-api/pkg/api/ipam"
 	"github.com/pkg/errors"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/ippool"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/tools/ippool"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 // ErrUndefined means that operation is not supported

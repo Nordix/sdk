@@ -27,7 +27,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/opentelemetry"
+	"github.com/Nordix/nsm-sdk/pkg/tools/opentelemetry"
 )
 
 // WithTracing - returns array of grpc.ServerOption that should be passed to grpc.Dial to enable opentelemetry tracing

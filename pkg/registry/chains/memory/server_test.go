@@ -29,12 +29,12 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice/payload"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/payload"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	registryclient "github.com/networkservicemesh/sdk/pkg/registry/chains/client"
+	registryclient "github.com/Nordix/nsm-sdk/pkg/registry/chains/client"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 )
 
 func Test_RegistryMemory_ShouldSetDefaultPayload(t *testing.T) {

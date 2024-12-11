@@ -23,7 +23,7 @@ import (
 	"google.golang.org/grpc"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 )
 
 // tailNetworkServiceEndpointRegistryServer is a simple implementation of registry.NetworkServiceEndpointRegistryServer that is called at the end

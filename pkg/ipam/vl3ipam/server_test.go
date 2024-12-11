@@ -23,15 +23,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/networkservicemesh/api/pkg/api/ipam"
+	"github.com/Nordix/nsm-api/pkg/api/ipam"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 	"google.golang.org/grpc"
 
 	"google.golang.org/grpc/credentials/insecure"
 
-	"github.com/networkservicemesh/sdk/pkg/ipam/vl3ipam"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/ipam/vl3ipam"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
 )
 
 // nolint:unparam

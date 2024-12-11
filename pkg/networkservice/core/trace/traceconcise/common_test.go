@@ -28,9 +28,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/trace/testutil"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/trace/testutil"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 func TestOutput(t *testing.T) {
@@ -108,16 +108,16 @@ func TestErrorOutput(t *testing.T) {
 			"{\"ip_context\":{\"src_ip_required\":true}},\"labels\":{\"Label\":\"B\"}}\n" +
 			" [ERRO] [id:conn-1] [type:networkService] Error returned from sdk/pkg/networkservice/core/trace/testutil/ErrorServer.Request:" +
 			" Error returned from api/pkg/api/networkservice/networkServiceClient.Close;" +
-			"\tgithub.com/networkservicemesh/sdk/pkg/networkservice/core/trace.(*beginTraceClient).Close;" +
-			"\t\t/root/go/pkg/mod/github.com/networkservicemesh/sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/trace/client.go:85;" +
-			"\tgithub.com/networkservicemesh/sdk/pkg/networkservice/core/next.(*nextClient).Close;" +
-			"\t\t/root/go/pkg/mod/github.com/networkservicemesh/sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/next/client.go:65;" +
-			"\tgithub.com/networkservicemesh/sdk/pkg/networkservice/core/next.(*nextClient).Close;" +
-			"\t\t/root/go/pkg/mod/github.com/networkservicemesh/sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/next/client.go:65;" +
-			"\tgithub.com/networkservicemesh/sdk/pkg/networkservice/core/trace.(*endTraceClient).Close;" +
-			"\t\t/root/go/pkg/mod/github.com/networkservicemesh/sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/trace/client.go:106;" +
-			"\tgithub.com/networkservicemesh/sdk/pkg/networkservice/core/next.(*nextClient).Close;" +
-			"\t\t/root/go/pkg/mod/github.com/networkservicemesh/sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/next/client.go:65;\t\n"
+			"\tgithub.com/Nordix/nsm-sdk/pkg/networkservice/core/trace.(*beginTraceClient).Close;" +
+			"\t\t/root/go/pkg/mod/github.com/Nordix/nsm-sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/trace/client.go:85;" +
+			"\tgithub.com/Nordix/nsm-sdk/pkg/networkservice/core/next.(*nextClient).Close;" +
+			"\t\t/root/go/pkg/mod/github.com/Nordix/nsm-sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/next/client.go:65;" +
+			"\tgithub.com/Nordix/nsm-sdk/pkg/networkservice/core/next.(*nextClient).Close;" +
+			"\t\t/root/go/pkg/mod/github.com/Nordix/nsm-sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/next/client.go:65;" +
+			"\tgithub.com/Nordix/nsm-sdk/pkg/networkservice/core/trace.(*endTraceClient).Close;" +
+			"\t\t/root/go/pkg/mod/github.com/Nordix/nsm-sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/trace/client.go:106;" +
+			"\tgithub.com/Nordix/nsm-sdk/pkg/networkservice/core/next.(*nextClient).Close;" +
+			"\t\t/root/go/pkg/mod/github.com/Nordix/nsm-sdk@v0.5.1-0.20210929180427-ec235de055f1/pkg/networkservice/core/next/client.go:65;\t\n"
 
 	result := testutil.TrimLogTime(&buff)
 	require.Equal(t, expectedOutput, result)

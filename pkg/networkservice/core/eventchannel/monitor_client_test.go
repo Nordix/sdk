@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/eventchannel"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/eventchannel"
 )
 
 func TestNewMonitorConnectionClient_MonitorConnections(t *testing.T) {

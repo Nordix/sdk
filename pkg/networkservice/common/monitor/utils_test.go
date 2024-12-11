@@ -21,15 +21,15 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/grpc/health/grpc_health_v1"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/endpoint"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/endpoint"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/null"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
 )
 
 func startEndpoint(ctx context.Context, listenOn *url.URL, server endpoint.Endpoint) error {

@@ -26,10 +26,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/eventchannel"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/eventchannel"
 )
 
 const (

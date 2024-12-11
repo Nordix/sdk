@@ -24,12 +24,12 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/ptypes/empty"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/sendfd"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/sendfd"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
 )
 
 func TestSendFDNSEClient_CallsNextUnregister(t *testing.T) {

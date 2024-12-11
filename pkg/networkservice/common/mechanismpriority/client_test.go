@@ -22,15 +22,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/cls"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/kernel"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/memif"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/srv6"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/vxlan"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/wireguard"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/cls"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/kernel"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/memif"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/srv6"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/vxlan"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/wireguard"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/mechanismpriority"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/mechanismpriority"
 )
 
 func TestMechanismPriorityClient_Request(t *testing.T) {

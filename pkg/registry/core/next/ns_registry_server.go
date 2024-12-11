@@ -19,11 +19,11 @@ package next
 import (
 	"context"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/streamcontext"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/streamcontext"
 
 	"github.com/golang/protobuf/ptypes/empty"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 )
 
 // NetworkServiceRegistryServerWrapper - function that wraps a registry server

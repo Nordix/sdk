@@ -28,11 +28,11 @@ import (
 	"google.golang.org/grpc/credentials/insecure"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	registryapi "github.com/networkservicemesh/api/pkg/api/registry"
+	registryapi "github.com/Nordix/nsm-api/pkg/api/registry"
 
-	registryclient "github.com/networkservicemesh/sdk/pkg/registry/chains/client"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	registryclient "github.com/Nordix/nsm-sdk/pkg/registry/chains/client"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 )
 
 /*

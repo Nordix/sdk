@@ -23,9 +23,9 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/protobuf/types/known/emptypb"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
 )
 
 // countNSClient is a client type for counting Register / Unregister / Find

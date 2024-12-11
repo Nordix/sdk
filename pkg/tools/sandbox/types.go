@@ -21,17 +21,17 @@ import (
 	"net/url"
 	"time"
 
-	registryapi "github.com/networkservicemesh/api/pkg/api/registry"
+	registryapi "github.com/Nordix/nsm-api/pkg/api/registry"
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/endpoint"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/nsmgr"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/chains/nsmgrproxy"
-	"github.com/networkservicemesh/sdk/pkg/registry"
-	registryclient "github.com/networkservicemesh/sdk/pkg/registry/chains/client"
-	"github.com/networkservicemesh/sdk/pkg/registry/chains/proxydns"
-	"github.com/networkservicemesh/sdk/pkg/registry/common/dnsresolve"
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/endpoint"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/nsmgr"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/chains/nsmgrproxy"
+	"github.com/Nordix/nsm-sdk/pkg/registry"
+	registryclient "github.com/Nordix/nsm-sdk/pkg/registry/chains/client"
+	"github.com/Nordix/nsm-sdk/pkg/registry/chains/proxydns"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/dnsresolve"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 // SupplyNSMgrProxyFunc nsmgr proxy

@@ -20,10 +20,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice/payload"
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/payload"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/setpayload"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/setpayload"
 
 	"github.com/stretchr/testify/require"
 )

@@ -20,9 +20,9 @@
 package sendfd
 
 import (
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/null"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/null"
 )
 
 // NewServer - returns server which sends any "file://" Mechanism.Parameters[common.InodeURLs]s across the connection as fds (if possible) to the client

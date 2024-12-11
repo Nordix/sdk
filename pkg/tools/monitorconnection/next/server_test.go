@@ -22,10 +22,10 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/monitorconnection/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/monitorconnection/streamcontext"
+	"github.com/Nordix/nsm-sdk/pkg/tools/monitorconnection/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/monitorconnection/streamcontext"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/assert"
 )
 

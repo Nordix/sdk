@@ -19,7 +19,7 @@ package switchcase
 import (
 	"context"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 )
 
 // Condition is a type for switchcase.*Case condition

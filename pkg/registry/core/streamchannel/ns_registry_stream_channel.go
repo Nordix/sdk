@@ -22,7 +22,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 )

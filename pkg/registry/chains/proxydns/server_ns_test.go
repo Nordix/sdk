@@ -24,16 +24,16 @@ import (
 	"testing"
 	"time"
 
-	registryapi "github.com/networkservicemesh/api/pkg/api/registry"
+	registryapi "github.com/Nordix/nsm-api/pkg/api/registry"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 
-	registryclient "github.com/networkservicemesh/sdk/pkg/registry/chains/client"
+	registryclient "github.com/Nordix/nsm-sdk/pkg/registry/chains/client"
 
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
-	"github.com/networkservicemesh/sdk/pkg/tools/sandbox"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
+	"github.com/Nordix/nsm-sdk/pkg/tools/sandbox"
 )
 
 /*

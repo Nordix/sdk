@@ -31,11 +31,11 @@ import (
 	"go.uber.org/goleak"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/memory"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/next"
-	"github.com/networkservicemesh/sdk/pkg/registry/core/streamchannel"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/memory"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/next"
+	"github.com/Nordix/nsm-sdk/pkg/registry/core/streamchannel"
 )
 
 func TestNetworkServiceRegistryServer_RegisterAndFind(t *testing.T) {

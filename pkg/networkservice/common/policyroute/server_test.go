@@ -27,14 +27,14 @@ import (
 	"go.uber.org/goleak"
 	"gopkg.in/yaml.v2"
 
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/policyroute"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/tools/fs"
-	"github.com/networkservicemesh/sdk/pkg/tools/log"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/policyroute"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/tools/fs"
+	"github.com/Nordix/nsm-sdk/pkg/tools/log"
 )
 
 const defaultPrefixesFileName = "policies.yaml"

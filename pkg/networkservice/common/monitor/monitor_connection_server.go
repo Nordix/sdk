@@ -21,7 +21,7 @@ import (
 
 	"github.com/edwarnicke/serialize"
 	"github.com/google/uuid"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 )
 
 type monitorConnectionServer struct {

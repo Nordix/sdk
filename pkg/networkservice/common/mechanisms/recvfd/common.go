@@ -26,7 +26,7 @@ import (
 
 	"github.com/edwarnicke/grpcfd"
 	"github.com/edwarnicke/serialize"
-	"github.com/networkservicemesh/api/pkg/api/networkservice/mechanisms/common"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice/mechanisms/common"
 	"github.com/pkg/errors"
 )
 

@@ -25,25 +25,25 @@ import (
 
 	"google.golang.org/grpc"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/trimpath"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/trimpath"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/utils/metadata"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/utils/metadata"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/begin"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/begin"
 
 	"github.com/google/uuid"
-	"github.com/networkservicemesh/api/pkg/api/networkservice"
+	"github.com/Nordix/nsm-api/pkg/api/networkservice"
 
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/authorize"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/monitor"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/timeout"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/updatepath"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/common/updatetoken"
-	"github.com/networkservicemesh/sdk/pkg/networkservice/core/chain"
-	"github.com/networkservicemesh/sdk/pkg/tools/grpcutils"
-	authmonitor "github.com/networkservicemesh/sdk/pkg/tools/monitorconnection/authorize"
-	"github.com/networkservicemesh/sdk/pkg/tools/monitorconnection/next"
-	"github.com/networkservicemesh/sdk/pkg/tools/token"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/authorize"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/monitor"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/timeout"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/updatepath"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/common/updatetoken"
+	"github.com/Nordix/nsm-sdk/pkg/networkservice/core/chain"
+	"github.com/Nordix/nsm-sdk/pkg/tools/grpcutils"
+	authmonitor "github.com/Nordix/nsm-sdk/pkg/tools/monitorconnection/authorize"
+	"github.com/Nordix/nsm-sdk/pkg/tools/monitorconnection/next"
+	"github.com/Nordix/nsm-sdk/pkg/tools/token"
 )
 
 // Endpoint - aggregates the APIs:

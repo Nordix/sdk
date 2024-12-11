@@ -24,12 +24,12 @@ import (
 	"os"
 	"testing"
 
-	"github.com/networkservicemesh/api/pkg/api/registry"
+	"github.com/Nordix/nsm-api/pkg/api/registry"
 
 	"github.com/stretchr/testify/require"
 	"go.uber.org/goleak"
 
-	"github.com/networkservicemesh/sdk/pkg/registry/common/clientinfo"
+	"github.com/Nordix/nsm-sdk/pkg/registry/common/clientinfo"
 )
 
 func setEnvs(envs map[string]string) error {
