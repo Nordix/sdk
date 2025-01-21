@@ -29,6 +29,7 @@ import (
 	"github.com/networkservicemesh/sdk/pkg/registry/core/trace/traceverbose"
 	"github.com/networkservicemesh/sdk/pkg/tools/log"
 	"github.com/networkservicemesh/sdk/pkg/tools/log/logruslogger"
+
 )
 
 type traceNetworkServiceEndpointRegistryClient struct {
@@ -45,20 +46,23 @@ func NewNetworkServiceEndpointRegistryClient(traced registry.NetworkServiceEndpo
 }
 
 func (t *traceNetworkServiceEndpointRegistryClient) Register(ctx context.Context, in *registry.NetworkServiceEndpoint, opts ...grpc.CallOption) (*registry.NetworkServiceEndpoint, error) {
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Register(ctx, in, opts...)
 	}
-	if logrus.GetLevel() <= logrus.WarnLevel {
+	if logrus.GetLevel() >= logrus.DebugLevel {
 		return t.concise.Register(ctx, in, opts...)
+	}
+	if log.FromContext(ctx) == log.L() {
+		ctx = log.WithLog(ctx, logruslogger.New(ctx))
 	}
 	return t.original.Register(ctx, in, opts...)
 }
 
 func (t *traceNetworkServiceEndpointRegistryClient) Find(ctx context.Context, in *registry.NetworkServiceEndpointQuery, opts ...grpc.CallOption) (registry.NetworkServiceEndpointRegistry_FindClient, error) {
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Find(ctx, in, opts...)
 	}
-	if logrus.GetLevel() <= logrus.WarnLevel {
+	if logrus.GetLevel() >= logrus.DebugLevel {
 		return t.concise.Find(ctx, in, opts...)
 	}
 	if log.FromContext(ctx) == log.L() {
@@ -68,10 +72,10 @@ func (t *traceNetworkServiceEndpointRegistryClient) Find(ctx context.Context, in
 }
 
 func (t *traceNetworkServiceEndpointRegistryClient) Unregister(ctx context.Context, in *registry.NetworkServiceEndpoint, opts ...grpc.CallOption) (*empty.Empty, error) {
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Unregister(ctx, in, opts...)
 	}
-	if logrus.GetLevel() <= logrus.WarnLevel {
+	if logrus.GetLevel() >= logrus.DebugLevel {
 		return t.concise.Unregister(ctx, in, opts...)
 	}
 	if log.FromContext(ctx) == log.L() {
@@ -94,10 +98,10 @@ func NewNetworkServiceEndpointRegistryServer(traced registry.NetworkServiceEndpo
 }
 
 func (t *traceNetworkServiceEndpointRegistryServer) Register(ctx context.Context, in *registry.NetworkServiceEndpoint) (*registry.NetworkServiceEndpoint, error) {
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Register(ctx, in)
 	}
-	if logrus.GetLevel() <= logrus.WarnLevel {
+	if logrus.GetLevel() >= logrus.DebugLevel {
 		return t.concise.Register(ctx, in)
 	}
 	if log.FromContext(ctx) == log.L() {
@@ -107,20 +111,20 @@ func (t *traceNetworkServiceEndpointRegistryServer) Register(ctx context.Context
 }
 
 func (t *traceNetworkServiceEndpointRegistryServer) Find(in *registry.NetworkServiceEndpointQuery, s registry.NetworkServiceEndpointRegistry_FindServer) error {
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Find(in, s)
 	}
-	if logrus.GetLevel() <= logrus.WarnLevel {
+	if logrus.GetLevel() >= logrus.DebugLevel {
 		return t.concise.Find(in, s)
 	}
 	return t.original.Find(in, s)
 }
 
 func (t *traceNetworkServiceEndpointRegistryServer) Unregister(ctx context.Context, in *registry.NetworkServiceEndpoint) (*empty.Empty, error) {
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Unregister(ctx, in)
 	}
-	if logrus.GetLevel() <= logrus.WarnLevel {
+	if logrus.GetLevel() >= logrus.DebugLevel {
 		return t.concise.Unregister(ctx, in)
 	}
 	if log.FromContext(ctx) == log.L() {

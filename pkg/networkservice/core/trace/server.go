@@ -45,28 +45,27 @@ func NewNetworkServiceServer(traced networkservice.NetworkServiceServer) network
 }
 
 func (t *traceServer) Request(ctx context.Context, request *networkservice.NetworkServiceRequest) (*networkservice.Connection, error) {
-	if logrus.GetLevel() <= logrus.WarnLevel {
-		if log.FromContext(ctx) == log.L() {
-			ctx = log.WithLog(ctx, logruslogger.New(ctx))
-		}
-		return t.original.Request(ctx, request)
-	}
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Request(ctx, request)
 	}
-
-	return t.concise.Request(ctx, request)
+	if logrus.GetLevel() >= logrus.DebugLevel {
+		return t.concise.Request(ctx, request)
+	}
+	if log.FromContext(ctx) == log.L() {
+		ctx = log.WithLog(ctx, logruslogger.New(ctx))
+	}
+	return t.original.Request(ctx, request)
 }
 
 func (t *traceServer) Close(ctx context.Context, conn *networkservice.Connection) (*empty.Empty, error) {
-	if logrus.GetLevel() <= logrus.WarnLevel {
-		if log.FromContext(ctx) == log.L() {
-			ctx = log.WithLog(ctx, logruslogger.New(ctx))
-		}
-		return t.original.Close(ctx, conn)
-	}
-	if logrus.GetLevel() >= logrus.DebugLevel {
+	if logrus.GetLevel() >= logrus.TraceLevel {
 		return t.verbose.Close(ctx, conn)
 	}
-	return t.concise.Close(ctx, conn)
+	if logrus.GetLevel() >= logrus.DebugLevel {
+		return t.concise.Close(ctx, conn)
+	}
+	if log.FromContext(ctx) == log.L() {
+		ctx = log.WithLog(ctx, logruslogger.New(ctx))
+	}
+	return t.original.Close(ctx, conn)
 }

@@ -59,5 +59,5 @@ func logObject(ctx context.Context, k, v interface{}) {
 	} else {
 		msg = fmt.Sprint(v)
 	}
-	s.Infof("%v=%s", k, msg)
+	s.Debugf("%v=%s", k, msg)
 }
